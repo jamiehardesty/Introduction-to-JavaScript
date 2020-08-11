@@ -29,8 +29,12 @@ console.log(Number('123'));
 
 
 //Task d: Write a function to multiply a*b 
-
-
+let a = 4;
+let b = 3;
+// function meow(meowMix) {
+//     return a * b;
+//   }
+console.log(a*b);
 
 
 
