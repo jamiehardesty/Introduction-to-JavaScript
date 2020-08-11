@@ -41,7 +41,9 @@ console.log(a*b);
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
-
+let age = 28;
+let dogYears = 7;
+console.log("Wow, I'm " + age*dogYears + " years old in dog years.");
 
 
 
