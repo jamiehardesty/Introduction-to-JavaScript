@@ -11,7 +11,14 @@ var votingAge = 21;
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
-
+var kitty = Math.round(Math.random(0, 1));
+if(kitty === 1){
+  console.log('maine coon')
+}
+// if(kitty = 0){
+else{
+  console.log('russian blue')
+}
 
 
 
