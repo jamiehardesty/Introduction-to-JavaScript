@@ -197,17 +197,17 @@ if(javaGrade >= 0 && javaGrade <= 60){
 //update your rock papers sissors code below to take a prompt from a user using the window object
 
 var stretch = prompt("Choose a number from 0-2. 0 being rock, 1 being paper, and 2 being scissors.");
-console.log(stretch)
+console.log("Remainder: 0 being rock, 1 being paper, and 2 being scissors.You have entered " + stretch + " Your results are below.")
 
+let compyInputB = Math.floor(Math.random() * 3);
+console.log(compyInputB + " = where 0:rock, 1:paper, 2:scissors")
 
-let playerinput = stretch;// 1
-let compyInput = Math.floor(Math.random() * 3);
-if(compyInput === 0){
-    console.log("Computer played rock. You played paper. You win!");
+if(compyInputB <= stretch){
+    console.log("Stretch - You win!");
 }
-if(compyInput === 1){
-    console.log("Computer played paper. You played paper. It's a tie!");
+if(compyInputB === stretch){
+    console.log("Stretch - It's a tie!");
 }
-if(compyInput === 2){
-    console.log("Computer played scissors. You played paper. The computer wins!");
+if(compyInputB >= stretch){
+    console.log("Stretch - The computer wins!");
 }
