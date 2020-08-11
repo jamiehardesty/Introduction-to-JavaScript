@@ -130,13 +130,16 @@ if(compyInput === 2){
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 let kilometer = 5;
 let miles = 0.621371;
-console.log(kilometer * miles)
+console.log("5 km. converts to " + (kilometer * miles) + "mi.")
 // answer: 3.10686 miles
 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
-  
+let feet = 5;
+let centimeters = 30.48;
+console.log("5 ft. converts to " + (feet * centimeters) + "cm.")
+// answer: 152.4 cm.
 
 
 
