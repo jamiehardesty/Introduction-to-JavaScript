@@ -187,15 +187,27 @@ if(javaGrade >= 0 && javaGrade <= 60){
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
-
-
+// const stretch = "Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels";
+// var stretchA = stretch.includes("a", "e", "i", "o", "u","A", "E", "I", "O", "U");
+// console.log(stretchA.length);
 
 
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
 
+var stretch = prompt("Choose a number from 0-2. 0 being rock, 1 being paper, and 2 being scissors.");
+console.log(stretch)
 
 
-
-
+let playerinput = stretch;// 1
+let compyInput = Math.floor(Math.random() * 3);
+if(compyInput === 0){
+    console.log("Computer played rock. You played paper. You win!");
+}
+if(compyInput === 1){
+    console.log("Computer played paper. You played paper. It's a tie!");
+}
+if(compyInput === 2){
+    console.log("Computer played scissors. You played paper. The computer wins!");
+}
