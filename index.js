@@ -82,7 +82,6 @@ function dogFeeder(resultMaybe){
 }
 dogFeeder('X')
 
-
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
 // Your function should take a string (either rock paper or sissors)
@@ -90,8 +89,33 @@ dogFeeder('X')
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
-  
+const rock = 0;
+const paper = 1;
+const scissors = 2;
+
+// let 0 = rock;
+// let 1 = paper;
+// let 2 = scissors;
+
+let playerinput = 1;// 1
+let compyInput = Math.floor(Math.random() * 3);
+if(compyInput === 0){
+    console.log("Computer played rock. You played paper. You win!");
+}
+if(compyInput === 1){
+    console.log("Computer played paper. You played paper. It's a tie!");
+}
+if(compyInput === 2){
+    console.log("Computer played scissors. You played paper. The computer wins!");
+}
+
+
+// function winnerResult(WinOrLose){
+//     if(WinOrLose === 'Win'){}
+// }
+// winnerResult('Win');
+
+// console.log("You chose " + playerinput " as your choice. The computer chose " + compyInput + ". You've " + winnerResult);
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
