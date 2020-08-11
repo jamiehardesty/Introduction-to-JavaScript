@@ -165,10 +165,22 @@ for(let i = 99; i > 0; i--){
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
-  
-
-  
-  
+let javaGrade = Math.floor(Math.random() * 101);
+if(javaGrade >= 90 && javaGrade <= 101){
+    console.log("You got " + javaGrade + " out of 100. You have an A.");
+}
+if(javaGrade >= 80 && javaGrade <= 90){
+    console.log("You got " + javaGrade + " out of 100. You have a B.");
+}
+if(javaGrade >= 70 && javaGrade <= 80){
+    console.log("You got " + javaGrade + " out of 100. You have a C.");
+}
+if(javaGrade >= 60 && javaGrade <= 70){
+    console.log("You got " + javaGrade + " out of 100. You have a D.");
+}
+if(javaGrade >= 0 && javaGrade <= 60){
+    console.log("You got " + javaGrade + " out of 100. You have a F.");
+}
 
 /************************************************************** Stretch **************************************************************/
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
