@@ -109,19 +109,29 @@ if(compyInput === 2){
     console.log("Computer played scissors. You played paper. The computer wins!");
 }
 
-
-// function winnerResult(WinOrLose){
-//     if(WinOrLose === 'Win'){}
+// const compyArray = [
+//     "rock",
+//     "scissors",
+//     "paper"
+// ];
+// var compySelection = compyArray[Math.floor(Math.random()*compyArray.length)];
+// if(compySelection > playerinput){
+//     console.log("The computer wins rock paper scissors! They played " + compySelection + " against your paper.");
 // }
-// winnerResult('Win');
-
-// console.log("You chose " + playerinput " as your choice. The computer chose " + compyInput + ". You've " + winnerResult);
+// if(compySelection === playerinput){
+//     console.log("It's a tie! The computer played " + compySelection + " against your paper.");
+// }
+// if(compySelection < playerinput){
+//     console.log("You won at rock paper scissors! The computer played " + compySelection + " against your paper.");
+// }
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
-
-
+let kilometer = 5;
+let miles = 0.621371;
+console.log(kilometer * miles)
+// answer: 3.10686 miles
 
 
 
