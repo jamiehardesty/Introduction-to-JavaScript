@@ -65,9 +65,22 @@ console.log("Wow, I'm " + age*dogYears + " years old in dog years.");
 // 7 - 12 months 4% of their body weight
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
-  
 
+let dogWeight = 15;
+// let dogAge = 1; 
 
+// function dogFeed(resultMatch) {
+//     if(resultMatch = dogWeight * 0.03) {
+//         console.log("Your dog needs " + resultMatch + "lbs. of food.")
+// }
+// dogFeed(dogWeight);
+
+function dogFeeder(resultMaybe){
+    if(resultMaybe === 'X'){
+        console.log("Your dog needs " + (dogWeight * 0.03) + " lbs of food.")
+    }
+}
+dogFeeder('X')
 
 
 /************************************************************** Task 4 **************************************************************/
