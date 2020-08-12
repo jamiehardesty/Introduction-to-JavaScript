@@ -196,54 +196,63 @@ if(javaGrade >= 0 && javaGrade <= 60){
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
 
-var stretch = prompt("Choose a number from 0-2. 0 being rock, 1 being paper, and 2 being scissors.");
-if(stretch = 0) {
-    stretch = "rock";
+
+
+let stretchAAA = prompt("Choose a number from 0-2. 0 being rock, 1 being paper, and 2 being scissors.");
+if(stretchAAA == 0) {
+    let stretchAAA = "rock";
+    console.log("You have entered 0 - rock");
 }
-if(stretch = 1) {
-    stretch = "paper";
+if(stretchAAA == 1) {
+    let stretchAAA = "paper";
+    console.log("You have entered 1 - paper");
 }
-if(stretch = 2) {
-    stretch = "scissors";
+if(stretchAAA == 2) {
+    let stretchAAA = "scissors";
+    console.log("You have entered 2 - scissors");
 }
-console.log("You have entered " + stretch + ".")
+// console.log("You have entered " + stretchAAA);
 
 let compyInputB = Math.floor(Math.random() * 3);
-if(compyInputB = 0) {
-    compyInputB = "rock";
+if(compyInputB == 0) {
+    let compyInputB = "rock";
+    console.log("The computer has randomly chosen 0 - rock");
 }
-if(compyInputB = 1) {
-    compyInputB = "paper";
+if(compyInputB == 1) {
+    let compyInputB = "paper";
+    console.log("The computer has randomly chosen 1 - paper");
 }
-if(compyInputB = 2) {
-    compyInputB = "scissors";
+if(compyInputB == 2) {
+    let compyInputB = "scissors";
+    console.log("The computer has randomly chosen 2 - scissors");
+}
+// console.log("The computer has chosen " + compyInputB);
+
+if(stretchAAA == 0 && compyInputB == 1) {
+    console.log("You've lost!")
+}
+if(stretchAAA == 0 && compyInputB == 2) {
+    console.log("You've won!")
 }
 
-if(stretch = "rock") && if(compyInputB = "paper") {
-    console.log("The computer has chosen " + compyInputB + ". You've lost!")
+if(stretchAAA == 1 && compyInputB == 0) {
+    console.log("You've won!")
 }
-if(stretch = "rock") && if(compyInputB = "scissors") {
-    console.log("The computer has chosen " + compyInputB + ". You've won!")
-}
-
-if(stretch = "paper") && if(compyInputB = "rock") {
-    console.log("The computer has chosen " + compyInputB + ". You've won!")
-}
-if(stretch = "paper") && if(compyInputB = "scissors") {
-    console.log("The computer has chosen " + compyInputB + ". You've lost!")
+if(stretchAAA == 1 && compyInputB == 2) {
+    console.log("You've lost!")
 }
 
-if(stretch = "scissors") && if(compyInputB = "rock") {
-    console.log("The computer has chosen " + compyInputB + ". You've lost!")
+if(stretchAAA == 2 && compyInputB == 0) {
+    console.log("You've lost!")
 }
-if(stretch = "scissors") && if(compyInputB = "paper") {
-    console.log("The computer has chosen " + compyInputB + ". You've won!")
+if(stretchAAA == 2 && compyInputB == 1) {
+    console.log("You've won!")
 }
 
 // if(compyInputB = "rock" && stretch = "rock"){
 //     console.log("Stretch - You win!");
 // }
-if(compyInputB === stretch){
+if(compyInputB == stretchAAA){
     console.log("Stretch - It's a tie!");
 }
 // if(compyInputB >= stretch){
