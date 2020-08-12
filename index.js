@@ -198,6 +198,15 @@ if(javaGrade >= 0 && javaGrade <= 60){
 
 var stretch = prompt("Choose a number from 0-2. 0 being rock, 1 being paper, and 2 being scissors.");
 console.log("Remainder: 0 being rock, 1 being paper, and 2 being scissors.You have entered " + stretch + " Your results are below.")
+if(stretch = 0) {
+    stretch = "rock";
+}
+if(stretch = 1) {
+    stretch = "paper";
+}
+if(stretch = 2) {
+    stretch = "scissors";
+}
 
 let compyInputB = Math.floor(Math.random() * 3);
 console.log(compyInputB + " = where 0:rock, 1:paper, 2:scissors")
