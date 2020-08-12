@@ -211,30 +211,33 @@ console.log("You have entered " + stretch + ".")
 let compyInputB = Math.floor(Math.random() * 3);
 if(compyInputB = 0) {
     compyInputB = "rock";
-    if(stretch = "scissors") {
-        console.log("The computer has chosen " + compyInputB + ". You've lost!")
-    }
-    if(stretch = "paper") {
-        console.log("The computer has chosen " + compyInputB + ". You've won!")
-    }
 }
 if(compyInputB = 1) {
     compyInputB = "paper";
-    if(stretch = "rock") {
-        console.log("The computer has chosen " + compyInputB + ". You've lost!")
-    }
-    if(stretch = "scissors") {
-        console.log("The computer has chosen " + compyInputB + ". You've won!")
-    }
 }
 if(compyInputB = 2) {
     compyInputB = "scissors";
-    if(stretch = "rock") {
-        console.log("The computer has chosen " + compyInputB + ". You've lost!")
-    }
-    if(stretch = "paper") {
-        console.log("The computer has chosen " + compyInputB + ". You've won!")
-    }
+}
+
+if(stretch = "rock") && if(compyInputB = "paper") {
+    console.log("The computer has chosen " + compyInputB + ". You've lost!")
+}
+if(stretch = "rock") && if(compyInputB = "scissors") {
+    console.log("The computer has chosen " + compyInputB + ". You've won!")
+}
+
+if(stretch = "paper") && if(compyInputB = "rock") {
+    console.log("The computer has chosen " + compyInputB + ". You've won!")
+}
+if(stretch = "paper") && if(compyInputB = "scissors") {
+    console.log("The computer has chosen " + compyInputB + ". You've lost!")
+}
+
+if(stretch = "scissors") && if(compyInputB = "rock") {
+    console.log("The computer has chosen " + compyInputB + ". You've lost!")
+}
+if(stretch = "scissors") && if(compyInputB = "paper") {
+    console.log("The computer has chosen " + compyInputB + ". You've won!")
 }
 
 // if(compyInputB = "rock" && stretch = "rock"){
