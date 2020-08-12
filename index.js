@@ -208,16 +208,41 @@ if(stretch = 2) {
 }
 console.log("You have entered " + stretch + ".")
 
-
 let compyInputB = Math.floor(Math.random() * 3);
-console.log(compyInputB + " = Computer input, where 0:rock, 1:paper, 2:scissors")
-
-if(compyInputB <= stretch){
-    console.log("Stretch - You win!");
+if(compyInputB = 0) {
+    compyInputB = "rock";
+    if(stretch = "scissors") {
+        console.log("The computer has chosen " + compyInputB + ". You've lost!")
+    }
+    if(stretch = "paper") {
+        console.log("The computer has chosen " + compyInputB + ". You've won!")
+    }
 }
+if(compyInputB = 1) {
+    compyInputB = "paper";
+    if(stretch = "rock") {
+        console.log("The computer has chosen " + compyInputB + ". You've lost!")
+    }
+    if(stretch = "scissors") {
+        console.log("The computer has chosen " + compyInputB + ". You've won!")
+    }
+}
+if(compyInputB = 2) {
+    compyInputB = "scissors";
+    if(stretch = "rock") {
+        console.log("The computer has chosen " + compyInputB + ". You've lost!")
+    }
+    if(stretch = "paper") {
+        console.log("The computer has chosen " + compyInputB + ". You've won!")
+    }
+}
+
+// if(compyInputB = "rock" && stretch = "rock"){
+//     console.log("Stretch - You win!");
+// }
 if(compyInputB === stretch){
     console.log("Stretch - It's a tie!");
 }
-if(compyInputB >= stretch){
-    console.log("Stretch - The computer wins!");
-}
+// if(compyInputB >= stretch){
+//     console.log("Stretch - The computer wins!");
+// }
