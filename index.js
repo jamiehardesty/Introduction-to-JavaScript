@@ -198,55 +198,55 @@ if(javaGrade >= 0 && javaGrade <= 60){
 
 
 
-let stretchAAA = prompt("Choose a number from 0-2. 0 being rock, 1 being paper, and 2 being scissors.");
+let stretchAAA = prompt("Let's play Rock, Paper, Scissors! Choose a number from 0-2 where 0 is rock, 1 is paper, and 2 is scissors. Any other value means the computer has played one solo game by itself.");
 if(stretchAAA == 0) {
     let stretchAAA = "rock";
-    console.log("You have entered 0 - rock");
+    console.log("Stretch - You have entered 0 - rock");
 }
 if(stretchAAA == 1) {
     let stretchAAA = "paper";
-    console.log("You have entered 1 - paper");
+    console.log("Stretch - You have entered 1 - paper");
 }
 if(stretchAAA == 2) {
     let stretchAAA = "scissors";
-    console.log("You have entered 2 - scissors");
+    console.log("Stretch - You have entered 2 - scissors");
 }
 // console.log("You have entered " + stretchAAA);
 
 let compyInputB = Math.floor(Math.random() * 3);
 if(compyInputB == 0) {
     let compyInputB = "rock";
-    console.log("The computer has randomly chosen 0 - rock");
+    console.log("Stretch - The computer has randomly chosen 0 - rock");
 }
 if(compyInputB == 1) {
     let compyInputB = "paper";
-    console.log("The computer has randomly chosen 1 - paper");
+    console.log("Stretch - The computer has randomly chosen 1 - paper");
 }
 if(compyInputB == 2) {
     let compyInputB = "scissors";
-    console.log("The computer has randomly chosen 2 - scissors");
+    console.log("Stretch - The computer has randomly chosen 2 - scissors");
 }
 // console.log("The computer has chosen " + compyInputB);
 
 if(stretchAAA == 0 && compyInputB == 1) {
-    console.log("You've lost!")
+    console.log("Stretch - You've lost!")
 }
 if(stretchAAA == 0 && compyInputB == 2) {
-    console.log("You've won!")
+    console.log("Stretch - You've won!")
 }
 
 if(stretchAAA == 1 && compyInputB == 0) {
-    console.log("You've won!")
+    console.log("Stretch - You've won!")
 }
 if(stretchAAA == 1 && compyInputB == 2) {
-    console.log("You've lost!")
+    console.log("Stretch - You've lost!")
 }
 
 if(stretchAAA == 2 && compyInputB == 0) {
-    console.log("You've lost!")
+    console.log("Stretch - You've lost!")
 }
 if(stretchAAA == 2 && compyInputB == 1) {
-    console.log("You've won!")
+    console.log("Stretch - You've won!")
 }
 
 // if(compyInputB = "rock" && stretch = "rock"){
