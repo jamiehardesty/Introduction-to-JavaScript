@@ -89,10 +89,6 @@ dogFeeder('X')
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-const rock = 0;
-const paper = 1;
-const scissors = 2;
-
 // let 0 = rock;
 // let 1 = paper;
 // let 2 = scissors;
@@ -100,13 +96,13 @@ const scissors = 2;
 let playerinput = 1;// 1
 let compyInput = Math.floor(Math.random() * 3);
 if(compyInput === 0){
-    console.log("Computer played rock. You played paper. You win!");
+    console.log("For this task, the script is written to output paper. The randomized counter-play is rock. You win!");
 }
 if(compyInput === 1){
-    console.log("Computer played paper. You played paper. It's a tie!");
+    console.log("For this task, the script is written to output paper. The randomized counter-play is paper. It's a tie!");
 }
 if(compyInput === 2){
-    console.log("Computer played scissors. You played paper. The computer wins!");
+    console.log("For this task, the script is written to output paper. The randomized counter-play is scissors. The computer wins!");
 }
 
 // const compyArray = [
@@ -196,7 +192,9 @@ if(javaGrade >= 0 && javaGrade <= 60){
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
 
-
+// Pitfalls
+// Equal sign abuse (using =, ==, === interchangeably)
+// Thinking if(txt) && (txt) works
 
 let stretchAAA = prompt("Let's play Rock, Paper, Scissors! Choose a number from 0-2 where 0 is rock, 1 is paper, and 2 is scissors. Any other value means the computer has played one solo game by itself.");
 if(stretchAAA == 0) {
