@@ -4,7 +4,7 @@ var votingAge = 21;
     if(votingAge > 18) {
         console.log('true');
     }
-    if(votingAge < 18) {
+    else {
         console.log('false');
     }
 
@@ -16,7 +16,7 @@ var kitty = Math.round(Math.random(0, 1));
         console.log('maine coon')
     }
     // if(kitty = 0){
-    else{
+    else {
         console.log('russian blue')
     }
 
@@ -29,24 +29,38 @@ console.log(Number('123'));
 
 
 //Task d: Write a function to multiply a*b 
-let a = 4;
-let b = 3;
-// function meow(meowMix) {
-//     return a * b;
-//   }
-console.log(a*b);
+// let a = 4;
+// let b = 3;
+// // function meow(meowMix) {
+// //     return a * b;
+// //   }
+// console.log(a*b);
+// don't do console!
+// won't run in the browser
+// need to write logic properly 
+function multiply(a, b){
+    return a * b;
+}
+console.log(multiply(3,4));
+// this is how I should write the other questions !! 
 
-
+// f(x) I can re-use that I won't!! Write them!!
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
-let age = 28;
-let dogYears = 7;
-console.log("Wow, I'm " + age*dogYears + " years old in dog years.");
+// let age = 28;
+// let dogYears = 7;
+// console.log("Wow, I'm " + age*dogYears + " years old in dog years.");
 
+// f(x) I can re-use that I won't!! Write them!!
 
+function dogYears2(age){
+    console.log("Wow, I'm " + age*7 + " years old in dog years.");
+}
+dogYears2(28);
 
+// f(x) I can re-use that I won't!! Write them!!
 
 /************************************************************** Task 3 **************************************************************/
 //Dog feeder 
@@ -66,7 +80,7 @@ console.log("Wow, I'm " + age*dogYears + " years old in dog years.");
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
 
-let dogWeight = 15;
+// let dogWeight = 15;
 // let dogAge = 1; 
 
 // function dogFeed(resultMatch) {
@@ -75,12 +89,37 @@ let dogWeight = 15;
 // }
 // dogFeed(dogWeight);
 
-function dogFeeder(resultMaybe){
-    if(resultMaybe === 'X'){
-        console.log("Your dog needs " + (dogWeight * 0.03) + " lbs of food.")
+//order matters
+// function dogFeeder(dogWeight, adultPercent){
+//     // if(resultMaybe === 'X'){
+//         console.log("Your dog needs " + (dogWeight * adultPercent) + " lbs of food.")
+//     }
+
+// dogFeeder(15,0.03);
+
+function dogFood(dogAge, dogWeight){
+    if(dogAge >= 1){
+        if(dogWeight <= 5){
+            console.log(dogWeight*0.05);
+        }
+        else if(dogWeight > 5 && dogWeight <= 10){
+            console.log(dogWeight*0.04);
+        }
+        else if(dogWeight > 10 && dogWeight <= 15){
+            console.log(dogWeight *0.03);
+        }
+        else {
+            console.log(dogWeight * 0.02);
+        }
     }
+    // else {
+    //     return
+    // }
 }
-dogFeeder('X')
+dogFood(1,15);
+// don't forget the && !!
+
+
 
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
@@ -93,17 +132,37 @@ dogFeeder('X')
 // let 1 = paper;
 // let 2 = scissors;
 
-let playerinput = 1;// 1
-let compyInput = Math.floor(Math.random() * 3);
-if(compyInput === 0){
-    console.log("For this task, the script is written to output paper. The randomized counter-play is rock. You win!");
+// if computer input = 1 = rock 
+// if input matches, tie
+
+// let playerinput = 1;// 1 // make this a parameter 
+// let compyInput = Math.floor(Math.random() * 3);
+// if(compyInput === 0){
+//     console.log("For this task, the script is written to output paper. The randomized counter-play is rock. You win!");
+// }
+// if(compyInput === 1){
+//     console.log("For this task, the script is written to output paper. The randomized counter-play is paper. It's a tie!");
+// }
+// if(compyInput === 2){
+//     console.log("For this task, the script is written to output paper. The randomized counter-play is scissors. The computer wins!");
+// }
+
+function rockpaperscissors(string){
+    if(string === "rock" || "paper" || "scissors"){
+        let choice = Math.floor(Math.random() * 2);
+        if(choice === 1){
+            console.log("You won at rock, paper, scissors!");
+        }
+        else {
+            console.log("You lost at rock, paper, scissors!");
+        }
+    }
 }
-if(compyInput === 1){
-    console.log("For this task, the script is written to output paper. The randomized counter-play is paper. It's a tie!");
-}
-if(compyInput === 2){
-    console.log("For this task, the script is written to output paper. The randomized counter-play is scissors. The computer wins!");
-}
+rockpaperscissors("rock");
+
+
+// Functions! 
+// Not math / strings
 
 // const compyArray = [
 //     "rock",
@@ -129,7 +188,12 @@ let miles = 0.621371;
 console.log("5 km. converts to " + (kilometer * miles) + "mi.")
 // answer: 3.10686 miles
 
-
+function whomp(kilometers){
+    kilometers * 0.621371;
+    return whomp;
+}
+whomp(5);
+console.log(whomp(5));
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
 let feet = 5;
@@ -146,9 +210,12 @@ console.log("5 ft. converts to " + (feet * centimeters) + "cm.")
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
 // function annoyingSong()
 
-for(let i = 99; i > 0; i--){
-  console.log("There are " + i + " bottles of soda on the wall. " + i + " bottles of soda. Take one down, pass it around, " + (i-1) + " bottles of soda on the wall.");
+function annoyingSong(bottles){
+    for(let i = bottles; i > 0; i--){
+        console.log("There are " + i + " bottles of soda on the wall. " + i + " bottles of soda. Take one down, pass it around, " + (i-1) + " bottles of soda on the wall.");
+      }
 }
+annoyingSong(99);
 
 
 
@@ -174,7 +241,7 @@ if(javaGrade >= 70 && javaGrade <= 80){
 if(javaGrade >= 60 && javaGrade <= 70){
     console.log("You got " + javaGrade + " out of 100. You have a D.");
 }
-if(javaGrade >= 0 && javaGrade <= 60){
+else {
     console.log("You got " + javaGrade + " out of 100. You have a F.");
 }
 
