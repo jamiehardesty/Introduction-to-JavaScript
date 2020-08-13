@@ -300,65 +300,85 @@ javaGrade(Math.floor(Math.random() * 101));
 // Pitfalls
 // Equal sign abuse (using =, ==, === interchangeably)
 // Thinking if(txt) && (txt) works
-function properStretch(popupInput,){
-if(popupInput === 0) {
-    popupInput = "rock";
-    console.log("Stretch - You have entered 0 - rock");
-}
-if(popupInput === 1) {
-    popupInput = "paper";
-    console.log("Stretch - You have entered 1 - paper");
-}
-else {
-    popupInput === "scissors";
-    console.log("Stretch - You have entered 2 - scissors");
-}
-// console.log("You have entered " + stretchAAA);
+function properStretch(){
+    let popupInput = prompt("Let's play Rock, Paper, Scissors! Please enter rock, paper, or scissors below to designate your play");
+    if(popupInput === 0) {
+        popupInput = "rock";
+        console.log("Stretch - You have entered 0 - rock");
+    }
+    if(popupInput === 1) {
+        popupInput = "paper";
+        console.log("Stretch - You have entered 1 - paper");
+    }
+    else {
+        popupInput === "scissors";
+        console.log("Stretch - You have entered 2 - scissors");
+    }
+    popupInput = string;
+    if(popupInput === "rock" || "paper" || "scissors"){
+        let choice = Math.floor(Math.random() * 2);
+        if(choice = 0){
+            return "rock";
+            console.log("The randomized counter-play is rock.");
+        }
+        if(choice = 1){
+            return "paper";
+            console.log("The randomized counter-play is paper.");
+        }
+        else {
+            return "scissors";
+            console.log("The randomized counter-play is scissors.");
+        }
+        }
+    }
+    if(popupInput === "paper" && choice === "rock"){
+        console.log("You win!")
+    }
+    if(popupInput === "rock" && choice === "scissors"){
+        console.log("You win!")
+    }
+    if(popupInput === "scissors" && choice === "paper"){
+        console.log("You win!")
+    }
+    if(popupInput ===  choice){
+        console.log("You tie! Whomp, Whomp!")
+    }
+    else {
+        console.log("You lose!")
+    }
+properStretch();
 
-let compyInputB = Math.floor(Math.random() * 3);
-if(compyInputB == 0) {
-    let compyInputB = "rock";
-    console.log("Stretch - The computer has randomly chosen 0 - rock");
-}
-if(compyInputB == 1) {
-    let compyInputB = "paper";
-    console.log("Stretch - The computer has randomly chosen 1 - paper");
-}
-if(compyInputB == 2) {
-    let compyInputB = "scissors";
-    console.log("Stretch - The computer has randomly chosen 2 - scissors");
-}
+
 // console.log("The computer has chosen " + compyInputB);
 
-if(stretchAAA == 0 && compyInputB == 1) {
-    console.log("Stretch - You've lost!")
-}
-if(stretchAAA == 0 && compyInputB == 2) {
-    console.log("Stretch - You've won!")
-}
-
-if(stretchAAA == 1 && compyInputB == 0) {
-    console.log("Stretch - You've won!")
-}
-if(stretchAAA == 1 && compyInputB == 2) {
-    console.log("Stretch - You've lost!")
-}
-
-if(stretchAAA == 2 && compyInputB == 0) {
-    console.log("Stretch - You've lost!")
-}
-if(stretchAAA == 2 && compyInputB == 1) {
-    console.log("Stretch - You've won!")
-}
-
-// if(compyInputB = "rock" && stretch = "rock"){
-//     console.log("Stretch - You win!");
+// if(stretchAAA == 0 && compyInputB == 1) {
+//     console.log("Stretch - You've lost!")
 // }
-if(compyInputB == stretchAAA){
-    console.log("Stretch - It's a tie!");
-}
+// if(stretchAAA == 0 && compyInputB == 2) {
+//     console.log("Stretch - You've won!")
+// }
+
+// if(stretchAAA == 1 && compyInputB == 0) {
+//     console.log("Stretch - You've won!")
+// }
+// if(stretchAAA == 1 && compyInputB == 2) {
+//     console.log("Stretch - You've lost!")
+// }
+
+// if(stretchAAA == 2 && compyInputB == 0) {
+//     console.log("Stretch - You've lost!")
+// }
+// if(stretchAAA == 2 && compyInputB == 1) {
+//     console.log("Stretch - You've won!")
+// }
+
+// // if(compyInputB = "rock" && stretch = "rock"){
+// //     console.log("Stretch - You win!");
+// // }
+// if(compyInputB == stretchAAA){
+//     console.log("Stretch - It's a tie!");
+// }
 // if(compyInputB >= stretch){
 //     console.log("Stretch - The computer wins!");
 // }
-}
-properStretch(prompt("Let's play Rock, Paper, Scissors! Choose a number from 0-2 where 0 is rock, 1 is paper, and 2 is scissors. Any other value means the computer has played one solo game by itself."),)
+        
