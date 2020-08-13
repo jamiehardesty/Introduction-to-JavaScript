@@ -112,9 +112,17 @@ function dogFood(dogAge, dogWeight){
             console.log(dogWeight * 0.02);
         }
     }
-    // else {
-    //     return
-    // }
+    if(dogAge < 1){
+        if(dogAge > .2 && dogAge <= .4){
+            console.log(dogWeight*0.1);
+        }
+        else if(dogAge > .4 && dogAge <= .7){
+            console.log(dogWeight*0.05);
+        }
+        else {
+            console.log(dogWeight * 0.04);
+        }
+    }
 }
 dogFood(1,15);
 // don't forget the && !!
@@ -301,7 +309,7 @@ javaGrade(Math.floor(Math.random() * 101));
 // Equal sign abuse (using =, ==, === interchangeably)
 // Thinking if(txt) && (txt) works
 function properStretch(){
-    let popupInput = prompt("Let's play Rock, Paper, Scissors! Please enter rock, paper, or scissors below to designate your play");
+    popupInput = prompt("Let's play Rock, Paper, Scissors! Please enter rock, paper, or scissors below to designate your play");
     if(popupInput === 0) {
         popupInput = "rock";
         console.log("Stretch - You have entered 0 - rock");
@@ -314,7 +322,6 @@ function properStretch(){
         popupInput === "scissors";
         console.log("Stretch - You have entered 2 - scissors");
     }
-    popupInput = string;
     if(popupInput === "rock" || "paper" || "scissors"){
         let choice = Math.floor(Math.random() * 2);
         if(choice = 0){
