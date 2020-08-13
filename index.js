@@ -272,16 +272,16 @@ annoyingSong(99);
 //60s should be D 
 //and anything below 60 should be F
 function javaGrade(randomize){
-    if(randomize >= 90 && randomize <= 101){
+    if(randomize > 90 && randomize <= 101){
         console.log("You got " + randomize + " out of 100. You have an A.");
     }
-    if(randomize >= 80 && randomize <= 90){
+    if(randomize > 80 && randomize <= 90){
         console.log("You got " + randomize + " out of 100. You have a B.");
     }
-    if(randomize >= 70 && randomize <= 80){
+    if(randomize > 70 && randomize <= 80){
         console.log("You got " + randomize + " out of 100. You have a C.");
     }
-    if(randomize >= 60 && randomize <= 70){
+    if(randomize > 60 && randomize <= 70){
         console.log("You got " + randomize + " out of 100. You have a D.");
     }
     else {
