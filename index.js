@@ -173,6 +173,15 @@ function rockpaperscissors(string){
     if(string === "paper" && choice === "rock"){
         console.log("You win!")
     }
+    if(string === "rock" && choice === "scissors"){
+        console.log("You win!")
+    }
+    if(string === "scissors" && choice === "paper"){
+        console.log("You win!")
+    }
+    if(string ===  choice){
+        console.log("You tie! Whomp, Whomp!")
+    }
     else {
         console.log("You lose!")
     }
@@ -291,18 +300,17 @@ javaGrade(Math.floor(Math.random() * 101));
 // Pitfalls
 // Equal sign abuse (using =, ==, === interchangeably)
 // Thinking if(txt) && (txt) works
-
-let stretchAAA = prompt("Let's play Rock, Paper, Scissors! Choose a number from 0-2 where 0 is rock, 1 is paper, and 2 is scissors. Any other value means the computer has played one solo game by itself.");
-if(stretchAAA == 0) {
-    let stretchAAA = "rock";
+function properStretch(popupInput,){
+if(popupInput === 0) {
+    popupInput = "rock";
     console.log("Stretch - You have entered 0 - rock");
 }
-if(stretchAAA == 1) {
-    let stretchAAA = "paper";
+if(popupInput === 1) {
+    popupInput = "paper";
     console.log("Stretch - You have entered 1 - paper");
 }
-if(stretchAAA == 2) {
-    let stretchAAA = "scissors";
+else {
+    popupInput === "scissors";
     console.log("Stretch - You have entered 2 - scissors");
 }
 // console.log("You have entered " + stretchAAA);
@@ -352,3 +360,5 @@ if(compyInputB == stretchAAA){
 // if(compyInputB >= stretch){
 //     console.log("Stretch - The computer wins!");
 // }
+}
+properStretch(prompt("Let's play Rock, Paper, Scissors! Choose a number from 0-2 where 0 is rock, 1 is paper, and 2 is scissors. Any other value means the computer has played one solo game by itself."),)
