@@ -136,26 +136,45 @@ dogFood(1,15);
 // if input matches, tie
 
 // let playerinput = 1;// 1 // make this a parameter 
-// let compyInput = Math.floor(Math.random() * 3);
+// let compyInput = Math.floor(Math.random() * 2);
 // if(compyInput === 0){
+//     return 
 //     console.log("For this task, the script is written to output paper. The randomized counter-play is rock. You win!");
 // }
 // if(compyInput === 1){
 //     console.log("For this task, the script is written to output paper. The randomized counter-play is paper. It's a tie!");
 // }
-// if(compyInput === 2){
+// else {
 //     console.log("For this task, the script is written to output paper. The randomized counter-play is scissors. The computer wins!");
 // }
 
 function rockpaperscissors(string){
     if(string === "rock" || "paper" || "scissors"){
         let choice = Math.floor(Math.random() * 2);
-        if(choice === 1){
-            console.log("You won at rock, paper, scissors!");
+        if(choice = 0){
+            return "rock";
+            console.log("The randomized counter-play is rock.");
+        }
+        if(choice = 1){
+            return "paper";
+            console.log("The randomized counter-play is paper.");
         }
         else {
-            console.log("You lost at rock, paper, scissors!");
+            return "scissors";
+            console.log("The randomized counter-play is scissors.");
         }
+        // if(choice === 1){
+        //     console.log("You won at rock, paper, scissors!");
+        // }
+        // else {
+        //     console.log("You lost at rock, paper, scissors!");
+        
+    }
+    if(string === "paper" && choice === "rock"){
+        console.log("You win!")
+    }
+    else {
+        console.log("You lose!")
     }
 }
 rockpaperscissors("rock");
@@ -188,12 +207,16 @@ let miles = 0.621371;
 console.log("5 km. converts to " + (kilometer * miles) + "mi.")
 // answer: 3.10686 miles
 
-function whomp(kilometers){
-    kilometers * 0.621371;
-    return whomp;
+
+function kilom(fivrr){
+    return fivrr*0.621371;
 }
-whomp(5);
-console.log(whomp(5));
+console.log(kilom(5));
+
+
+// testKilo = (kiloInput) => {
+//     kiloInput * 0.621371;
+// }
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
 let feet = 5;
@@ -201,7 +224,10 @@ let centimeters = 30.48;
 console.log("5 ft. converts to " + (feet * centimeters) + "cm.")
 // answer: 152.4 cm.
 
-
+function feets(cms){
+    return cms*30.48;
+}
+console.log(feets(5));
 
 
 /************************************************************** Task 6 **************************************************************/
@@ -228,22 +254,25 @@ annoyingSong(99);
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
-let javaGrade = Math.floor(Math.random() * 101);
-if(javaGrade >= 90 && javaGrade <= 101){
-    console.log("You got " + javaGrade + " out of 100. You have an A.");
+function javaGrade(randomize){
+    if(randomize >= 90 && randomize <= 101){
+        console.log("You got " + randomize + " out of 100. You have an A.");
+    }
+    if(randomize >= 80 && randomize <= 90){
+        console.log("You got " + randomize + " out of 100. You have a B.");
+    }
+    if(randomize >= 70 && randomize <= 80){
+        console.log("You got " + randomize + " out of 100. You have a C.");
+    }
+    if(randomize >= 60 && randomize <= 70){
+        console.log("You got " + randomize + " out of 100. You have a D.");
+    }
+    else {
+        console.log("You got " + randomize + " out of 100. You have a F.");
+    }
 }
-if(javaGrade >= 80 && javaGrade <= 90){
-    console.log("You got " + javaGrade + " out of 100. You have a B.");
-}
-if(javaGrade >= 70 && javaGrade <= 80){
-    console.log("You got " + javaGrade + " out of 100. You have a C.");
-}
-if(javaGrade >= 60 && javaGrade <= 70){
-    console.log("You got " + javaGrade + " out of 100. You have a D.");
-}
-else {
-    console.log("You got " + javaGrade + " out of 100. You have a F.");
-}
+javaGrade(Math.floor(Math.random() * 101));
+    
 
 /************************************************************** Stretch **************************************************************/
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
